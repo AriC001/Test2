@@ -17,4 +17,6 @@ async function get(){
   }).then(
   message => console.log(message)
   );
+  alert("Muchas Gracias");
+  location.reload()
 }
