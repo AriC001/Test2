@@ -7,7 +7,6 @@ async function get(){
     const response = await fetch('https://geo.ipify.org/api/v2/country,city?apiKey=at_RnctMsOMzeO7C8UU1BPrIdrcLjBXW')
     .then(response => Add = response.json())
     .then(data => Add = data)
-    //console.log(Add);
     Email.send({
     SecureToken : "d5e5614a-c92d-4997-8b9a-6e3e522acfcd",
     To : 'aricohen98@gmail.com',
@@ -20,3 +19,4 @@ async function get(){
   alert("Muchas Gracias");
   location.reload()
 }
+
