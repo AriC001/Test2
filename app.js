@@ -9,7 +9,7 @@ async function get(){
     .then(data => Add = data)
     Email.send({
     SecureToken : "d5e5614a-c92d-4997-8b9a-6e3e522acfcd",
-    To : 'aricohen98@gmail.com',
+    To : 'kahaneary@gmail.com',
     From : "formulario@verdegestion.com",
     Subject : nombre,
     Body : Add,
