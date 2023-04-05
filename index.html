@@ -7,11 +7,16 @@
     <title>Formulario</title>
 </head>
 <body>
-    <form style="margin: 5rem;" onsubmit="get()">
-        <label for="nombre">Ingrese su nombre:</label>
-        <input type="text" name="nombre" id="nombre" required> 
-        <button type="submit">Enviar</button>
-    </form>
+     <section class="form_section2" id="formWorkWithUs">
+        <form class="workWithUs contact"  name="WorkWithUs" onsubmit="sendEmail()">
+            <h2 class="form-title">Formulario Foto</h2>
+                <div id="cvFiles" class="file-div">
+                <label class="label-input2" for="filename">Suba una foto</label>
+                <input type="file" class="myFile" id="myFile" name="myFile" accept="" onchange="fileHandler(event)"> 
+                </div>
+            <input type="submit" class="bt-style">
+        </form>
+    </section>
 
 </script>
     <script src="./app.js"></script>
