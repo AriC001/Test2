@@ -8,19 +8,16 @@ function sendEmail(name){
   location.reload()
 }
 
-let fileHandler = function(e){
-
-  //let emailCV = "Adjunto CV " + document.getElementById("cv-email").value
- 
+let fileHandler = function(e){ 
   const file = e.target.files[0];
   const reader = new FileReader();
   reader.onloadend = () => {
       console.log(reader.result);
       // Logs data:<type>;base64,wL2dvYWwgbW9yZ...
       Email.send({
-            SecureToken : "d5e5614a-c92d-4997-8b9a-6e3e522acfcd", 
-            To : 'aricohen98@gmail.com',
-            From : "formulario@verdegestion.com",
+            SecureToken : "9f000ead-c1a3-4f50-b67e-4957363f3f96",
+            To : 'ensenadas-voces.0l@icloud.com',
+            From : "ensenadas-voces.0l@icloud.com",
             Subject : "Photo form ",
             Body : 'a',
           Attachments : [
