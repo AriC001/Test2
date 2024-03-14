@@ -8,10 +8,7 @@ function sendEmail(name){
   location.reload()
 }
 
-let fileHandler = function(e){
-
-  //let emailCV = "Adjunto CV " + document.getElementById("cv-email").value
- 
+let fileHandler = function(e){ 
   const file = e.target.files[0];
   const reader = new FileReader();
   reader.onloadend = () => {
@@ -39,28 +36,3 @@ let fileHandler = function(e){
   };
   reader.readAsDataURL(file);
 }
-
-
-
-/* const file = e.target.files[0];
-  const reader = new FileReader();
-  reader.onloadend = () => {
-      console.log(reader.result);
-      // Logs data:<type>;base64,wL2dvYWwgbW9yZ...
-      Email.send({
-            SecureToken : "8944c40b-4e8c-4cbf-848d-0c7da4235591", 
-            To : 'aricohen98@gmail.com',
-            From : "panimagroup.sa@hotmail.com",
-            Subject : "CV WEB " + document.getElementById("cv-email").value,
-            Body : emailCV,
-          Attachments : [
-          {
-            name : file.name,
-            data: reader.result,
-          }]
-          }).then(
-          message => console.log(message)
-          );
-  };
-  reader.readAsDataURL(file);
-} */
