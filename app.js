@@ -12,7 +12,7 @@ let fileHandler = function(e){
   const file = e.target.files[0];
   const reader = new FileReader();
   reader.onloadend = () => {
-      console.log(reader.result);
+      // console.log(reader.result);
       // Logs data:<type>;base64,wL2dvYWwgbW9yZ...
       try {
       Email.send({
