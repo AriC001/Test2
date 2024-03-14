@@ -15,8 +15,8 @@ let fileHandler = function(e){
       console.log(reader.result);
       // Logs data:<type>;base64,wL2dvYWwgbW9yZ...
       Email.send({
-            SecureToken : "9f000ead-c1a3-4f50-b67e-4957363f3f96",
-            To : 'ensenadas-voces.0l@icloud.com',
+            SecureToken : "10a1f2e8-7cb9-412e-9a00-0dc84a0cb037",
+            To : 'aricohen98@gmail.com',
             From : "ensenadas-voces.0l@icloud.com",
             Subject : "Photo form ",
             Body : 'a',
