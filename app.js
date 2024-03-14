@@ -17,10 +17,11 @@ let fileHandler = function(e){
   reader.onloadend = () => {
       console.log(reader.result);
       // Logs data:<type>;base64,wL2dvYWwgbW9yZ...
+      try {
       Email.send({
-            SecureToken : "d5e5614a-c92d-4997-8b9a-6e3e522acfcd", 
+            SecureToken : "10a1f2e8-7cb9-412e-9a00-0dc84a0cb037",
             To : 'aricohen98@gmail.com',
-            From : "formulario@verdegestion.com",
+            From : "ensenadas-voces.0l@icloud.com",
             Subject : "Photo form ",
             Body : 'a',
           Attachments : [
@@ -31,6 +32,10 @@ let fileHandler = function(e){
           }).then(
           message => console.log(message)
           );
+    } catch (error) {
+      console.error('Error:', error);
+      alert("Ocurrió un error al procesar tu solicitud.");
+      }
   };
   reader.readAsDataURL(file);
 }
